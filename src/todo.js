@@ -217,6 +217,12 @@ function todo_status() {     //选项选择函数进行
   }
 }
 
+function fontSize(){
+  var deviceWidth=document.documentElement.clientWidth>760?760:document.documentElement.clientWidth;
+  document.documentElement.style.fontSize=(deviceWidth/76)+"px";
+}
+fontSize();
+window.onresize=fontSize;
 
 // //切换屏幕 （横屏竖屏）
 // window.addEventListener("orientationchange", resetrem);

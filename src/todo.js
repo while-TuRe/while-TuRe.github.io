@@ -216,14 +216,14 @@ function todo_status() {     //选项选择函数进行
   }
 }
 
-resetrem();
-//切换屏幕 （横屏竖屏）
-window.addEventListener("orientationchange", resetrem);
-//resize：屏幕的大小发生改变就触发监听事件resetrem
-window.addEventListener("resize",resetrem);
 
-function resetrem(){
-    var html = document.querySelector("html");//获取到html元素
-    var width = html.getBoundingClientRect().width;//获取屏幕的宽度
-    html.style.fontSize = width/16+"px";
-}
+// //切换屏幕 （横屏竖屏）
+// window.addEventListener("orientationchange", resetrem);
+// //resize：屏幕的大小发生改变就触发监听事件resetrem
+// window.addEventListener("resize",resetrem);
+
+// function resetrem(){
+//     var html = document.querySelector("html");//获取到html元素
+//     var width = html.getBoundingClientRect().width;//获取屏幕的宽度
+//     html.style.fontSize = width/16+"px";
+// }

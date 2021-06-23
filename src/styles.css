@@ -14,21 +14,20 @@ html{
   align-items:center;
   width: 100%;
   height: 100%;
-  margin-left: 0px;
   transition-property: margin-left,width;
   transition-duration: 500ms,500ms;
 }
 
 /*加>代表todos下直接的span,孙辈不算*/
 .todos > span:first-child{
-  font-size: 95px;
+  font-size: 10em;
   color: rgba(175, 47, 47, 0.15);
 }
 
 .input {
   font-size: 0;
-  width: 550px;
-  height: 66px;
+  width: 60%;
+  height: 10%;
   box-shadow:0 0px 30px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1), inset 0 -3px 5px rgba(0,0,0,0.03);
   background-color: rgba(255, 255, 255, .9);
 }
@@ -60,7 +59,7 @@ html{
   outline: none;
   height: 80%;
   border: none;
-  font-size: 25px;
+  font-size: 1em;
   width: calc(100% - 120px); 
 }
 
@@ -80,15 +79,15 @@ html{
 .todo{
   box-shadow:  0 50px 80px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  width: 550px;
-  font-size: 23.9px;
-  line-height: 35px;
+  width: 60%;
+  font-size: 1.5em;
+  line-height: 1em;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: none;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 0.05em solid #ededed;
   align-items: center;
   word-break:break-all;
   background-color: white;
@@ -112,11 +111,11 @@ html{
 }
 
 .todo .reinput{
-  height: 50px;
-  font-size: 25px;
+  height: 80%;
+  font-size: 1em;
   outline: none;
-  border: 1px solid black;
-  background-color: white;
+  border:0.1em solid black;
+  background-color: rgb(238, 238, 238);
   width: calc(100% - 69px);
   margin:0 3px 0 66px;
   padding-right: 32px;
@@ -133,7 +132,7 @@ html{
 
 .todo  .question{
   display: block;
-  padding-right: 32px;
+  padding-right: 5%;
   flex-grow: 1;
   text-decoration: none;
   transition: .3s;
@@ -142,10 +141,10 @@ html{
 .todo span:nth-of-type(1) span {
   display: inline-block;
   vertical-align: middle;
-  width: 33px;
-  height: 33px;
-  border: 1px solid rgba(0,0,0,0.2);
-  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  border: 0.1em solid rgba(0,0,0,0.2);
+  border-radius: 1em;
 }
 
 .tick_on {
@@ -164,41 +163,35 @@ html{
 .tail {
   position: absolute;
   display: block;
-  line-height: 37px;
+  line-height: 3em;
   text-align: center;
-  font-size: 13.5px;
+  font-size: 0.8em;
   color: rgb(119, 119, 119);
   z-index: 1000;
   position: absolute;
-  height: 37px;
-  width: 550px;
-  bottom: -37px;
+  height: 10%;
+  width: 60%;
+  bottom: -10%; 
   background-color: rgba(255,255,255,0.9);
-  box-shadow:  0 50px 80px 0 rgba(0, 0, 0, 0.1),
-               0 10px 0 -5px #f6f6f6, 
-               0 9px 1px -3px rgba(0, 0, 0, 0.1), 
-               0 16px 0 -6px #f6f6f6, 
-               0 17px 2px -6px rgba(0, 0, 0, 0.1), 
-               0 20px 30px .5px rgba(0, 0, 0, 0.1);
 }
 .tail .items {
   position: absolute;
-  left:20px;
+  left:5%;
 }
 .tail a {
-  padding: 2px 8px;
-  margin:0 5px; 
-  border: 1px solid rgba(255,255,255,0);
+  padding: 0.5% 1%;
+  margin:0 10%; 
+  border: 0.1em solid rgba(255,255,255,0);
   color: rgb(119, 119, 119);
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 0.7em;
 }
 
 .tail .clear_completed {
   display: none;
   cursor: pointer;
   position: absolute;
-  right: 20px;
+  right: 10%;
 }
 /*All外框显色:nth-of-type伪类，表示第一个元素*/
 .tail a:nth-of-type(1){

@@ -176,6 +176,7 @@ body{
 
 .tick_on {
   background-image: url(../picture/gou.png);
+  background-repeat:no-repeat;
   background-position: center;
   -webkit-background-size: 100%;
   background-size: 100%;
@@ -194,7 +195,7 @@ body{
   text-align: center;
   font-size: 0.8em;
   color: rgb(119, 119, 119);
-  height: 10%;
+  height: 7%;
   width: 80%;
   background-color: rgba(255,255,255,0.9);
   box-shadow:  0 1em 2em 0 rgba(0, 0, 0, 0.2);
@@ -215,7 +216,7 @@ body{
   display: none;
   cursor: pointer;
   position: absolute;
-  right: 10%;
+  right:1%;
 }
 /*All外框显色:nth-of-type伪类，表示第一个元素*/
 .tail a:nth-of-type(1){

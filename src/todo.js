@@ -114,7 +114,8 @@ function add_todo(value) {  //添加问题
   newNode.classList.add("undown")
   newNode.lastChild.innerHTML = value
   newNode.style.display = A_status === "completed" ? "none" : "flex"
-  if (!init_status) parentNode.insertBefore(newNode,tailNode)
+  if (!init_status) parentNode.appendChild(newNode)
+  //if (!init_status) parentNode.insertBefore(newNode,tailNode)
   update_localStorage(1, value)
   document.body.querySelector(".input").lastElementChild.value = ""
   arrows.style.visibility = "visible"
